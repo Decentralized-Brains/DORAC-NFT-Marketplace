@@ -1,0 +1,149 @@
+.navWrapper {
+  width: 100%;
+  padding: 15px 0;
+  position: relative;
+  z-index: 100;
+}
+.hideMenu {
+  display: none;
+}
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+  margin-top: 3px;
+}
+.logo > h3 {
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.rightNavWrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.iconButton {
+  display: flex;
+  gap: 10px;
+}
+.customBtn,
+.customBtnBright {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--fontColor);
+  font-size: 1.2rem;
+  position: relative;
+}
+.customBtn::before {
+  content: attr(data-count);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--blue);
+  color: white;
+  border-radius: 50%;
+  font-size: 13px;
+}
+.navigation {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation li {
+  list-style: none;
+}
+.navigation li a {
+  text-decoration: none;
+  color: var(--fontColor2);
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navigation li a:hover {
+  color: var(--green);
+}
+.connectBtn {
+  background: var(--border);
+  border: none;
+  color: var(--fontColor);
+  padding: 7px 20px;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 767px) {
+  .navigation {
+    width: 60%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: var(--bg);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #37373f66;
+    padding-top: 10%;
+    z-index: 100;
+  }
+  .navigation li {
+    padding-bottom: 15px;
+    padding-left: 5%;
+  }
+  .navigation li a {
+    font-size: 16px;
+  }
+  .hideNavigation {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(0 0 0 / 25%);
+    top: 0;
+    right: 0;
+  }
+  .navSection {
+    padding: 0 10px;
+  }
+  .hideMenu {
+    display: block;
+  }
+  .menubar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  .menubar button {
+    background: none;
+    border: none;
+    color: var(--fontColor);
+    font-size: 28px;
+    margin-top: -10px;
+  }
+  .rightNavWrapper {
+    gap: 10px;
+  }
+  .connectBtn {
+    padding: 5px 16px;
+    font-size: 14px;
+  }
+  .customBtn,
+  .customBtnBright {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .customBtn::before {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+}

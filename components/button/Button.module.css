@@ -1,0 +1,15 @@
+.myBtn {
+  margin: 0 3px;
+  padding: 8px 15px;
+  border-radius: 1px;
+  background: none;
+  border: 1px solid;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--blue);
+  transition: 0.3s;
+}
+.myBtn:hover {
+  color: var(--fontColor2);
+  background-color: var(--bg2);
+}

@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+  display: grid;
+}
+.profilePic {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: -75px;
+  border: 8px solid var(--bg);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+.texts {
+  width: 100%;
+  text-align: center;
+  padding: 65px 0 70px 0;
+  font-weight: 600;
+}
+.texts > h2 {
+  color: var(--fontColor);
+}
+.ico {
+  color: var(--fontColor2);
+  /* margin-top: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ico > span {
+  color: var(--blue);
+}
+.ering {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--fontColor2);
+  width: 230px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.ering > p > span {
+  color: var(--fontColor);
+}
+.title {
+  color: var(--fontColor);
+  padding-bottom: 20px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titleFilters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0px;
+}
+.titleFilters > li {
+  list-style: none;
+  margin-left: 10px;
+  background: var(--bg2);
+  color: var(--fontColor2);
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.titleFilters > li:hover {
+  background: rgba(0, 183, 255, 0.178);
+  color: var(--blue);
+}

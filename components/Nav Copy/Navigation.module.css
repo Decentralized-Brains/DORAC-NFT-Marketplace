@@ -1,0 +1,67 @@
+.navWrapper {
+  padding: 20px 0px;
+  position: relative;
+  z-index: 100;
+}
+.dfx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoSection button {
+  display: none;
+}
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+}
+.logo > h3 {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px 30px;
+  margin-top: 7px;
+}
+.navRight li {
+  list-style: none;
+}
+.navRight li a {
+  text-decoration: none;
+  color: var(--fontColor2);
+}
+.navRight li a:hover {
+  color: var(--fontColor);
+}
+.rightWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.btnSame {
+  background: none;
+  color: var(--fontColor);
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+  .logoSection button {
+    display: block;
+  }
+  .navRight {
+    justify-content: center;
+  }
+}

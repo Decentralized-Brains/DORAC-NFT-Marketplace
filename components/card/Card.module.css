@@ -1,0 +1,105 @@
+.myCard {
+  max-width: 400px;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg2);
+  padding: 7px;
+  border-radius: 20px;
+  transition: transform .2s;
+}
+.myCard:hover {
+  transform: scale(1.05)
+}
+
+.cardHeader {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardHeader > span {
+  width: 60px !important;
+  text-align: right;
+  color: var(--fontDeep);
+  font-weight: 200;
+}
+.headerImages > span {
+  color: var(--fontDeep);
+  margin-left: 10px;
+  border-radius: 100%;
+}
+.headerImages {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-gap: 0 3px;
+}
+.headerImages img {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.headerImages > div > span {
+  border-radius: 100%;
+  border: 2px solid var(--fontColor2) !important;
+  margin-left: -5px !important;
+}
+
+.image {
+  width: 100%;
+  min-height: 200px;
+  display: grid;
+}
+.image img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+.customCB > h5 {
+  color: var(--fontColor);
+  font-weight: 600;
+}
+.customCB > p {
+  color: var(--fontDeep);
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 5px; */
+  padding: 20px 0;
+}
+.cardFooter > h5 {
+  font-weight: 500;
+  color: var(--blue);
+  margin-bottom: 0px;
+}
+.cardFooter > button {
+  background: var(--blue);
+  color: var(--bg);
+  font-weight: 500;
+}
+.cardFooter > button:hover {
+  color: var(--fontColor);
+}
+.custonBtn a {
+  padding: 7px 15px;
+  border-radius: 30px;
+  background: none;
+  color: var(--fontColor2);
+  border: 1px solid;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.custonBtn a:hover {
+  color: var(--fontColor);
+}
+
+@media (max-width: 768px) {
+  .myCard {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}

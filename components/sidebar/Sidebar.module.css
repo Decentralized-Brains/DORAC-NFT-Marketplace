@@ -1,0 +1,61 @@
+.sidebar {
+  width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+  background-color: var(--bg2);
+  border-radius: 7px;
+}
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+/* .sidebar::-webkit-scrollbar-track {
+  background: var(--bg3);
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgb(7, 157, 226);
+  border-radius: 10px;
+} */
+.header {
+  width: 100%;
+  background-color: var(--bg3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: var(--fontColor);
+}
+.header > h5 {
+  margin-bottom: 0px;
+}
+.mainPart {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+}
+
+.sidebarCard {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  padding: 15px 0;
+}
+.cardImage {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: flex;
+  margin-right: 20px;
+}
+.cardText > h5 {
+  color: var(--fontColor);
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.cardText > p {
+  font-size: 14px;
+  color: var(--fontDeep);
+  margin-bottom: 0px;
+}

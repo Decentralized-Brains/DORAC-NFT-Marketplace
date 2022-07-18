@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  padding: 50px;
+  margin-top: 50px;
+  text-align: center;
+  color: var(--fontDeep);
+  border-top: 1px solid var(--bg2);
+}
+.FooterLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.FooterLogo > span {
+  font-size: 1.4rem;
+  color: var(--fontColor);
+  font-weight: 600;
+  margin-left: 10px;
+}
