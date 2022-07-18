@@ -6,12 +6,12 @@ import {
   BrightnessHigh,
   List,
   Moon,
-  Search,
+  Search
 } from 'react-bootstrap-icons';
-import Logo from '../../assets/img/logo.png';
+import Logo from '../../assets/img/dorac.png';
+import MetamaskConnect from '../button/MetamaskConnect';
 import { NavLink } from '../navlink/NavLink';
 import styles from './Navigation.module.css';
-import MetamaskConnect from '../button/MetamaskConnect';
 /*
     dependencies: react-bootstrap-icons, react-bootsrap
 */
@@ -42,7 +42,7 @@ const Navigation = () => {
                 <Link href="/">
                   <div className={styles.logo}>
                     <Image src={Logo} alt="" />
-                    <h3>LOGO</h3>
+                    <h3>DORAC</h3>
                   </div>
                 </Link>
                 {/* <Button text={<List />} onClick={() => showNav()} /> */}

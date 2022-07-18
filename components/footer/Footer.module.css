@@ -12,6 +12,10 @@
   justify-content: center;
   padding: 10px;
 }
+.FooterLogo img {
+  height: 100px !important;
+  width: 100px !important;
+}
 .FooterLogo > span {
   font-size: 1.4rem;
   color: var(--fontColor);

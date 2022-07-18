@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Heart } from 'react-bootstrap-icons';
+import ShortenAddress from '../utils/shortenAddress';
 // internal imports
 import styles from './Card.module.css';
-import ShortenAddress from '../utils/shortenAddress';
 
 const Card = ({ data }) => {
   const {
@@ -17,7 +16,8 @@ const Card = ({ data }) => {
     amount,
   } = data;
   return (
-    <div className={`card ${styles.myCard}`}>
+    <Link href={'/' + tokenId}>
+    <div className={`card ${styles.myCard}`} style={{cursor: "pointer"}}>
       <div className={styles.image}>
         <img
           src={image}
@@ -52,6 +52,7 @@ const Card = ({ data }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
