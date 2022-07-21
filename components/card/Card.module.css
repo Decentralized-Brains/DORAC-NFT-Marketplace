@@ -3,7 +3,7 @@
   height: 100%;
   overflow: hidden;
   background: var(--bg2);
-  padding: 7px;
+  /* padding: 7px; */
   border-radius: 20px;
   transition: transform .2s;
 }
@@ -12,7 +12,7 @@
 }
 
 .cardHeader {
-  padding: 15px 0;
+  padding: 0 0 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +52,7 @@
   display: grid;
 }
 .image img {
-  border-radius: 20px;
+  border-radius: 20px 1px 1px;
   object-fit: cover;
 }
 .customCB > h5 {

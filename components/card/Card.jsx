@@ -29,7 +29,7 @@ const Card = ({ data }) => {
         <div className={styles.customCB}>
           <div className={styles.cardHeader}>
             <div className={styles.headerImages}>
-              <div>
+              <div style={{display: "flex", gap: "10px"}}>
                 <img src={image} alt="Image" />
                 <ShortenAddress
                   address={ownerOf}

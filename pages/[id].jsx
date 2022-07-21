@@ -1,27 +1,27 @@
+import { ethers } from 'ethers';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 // external imports
 import { useState } from 'react';
 import {
   ChevronRight,
   Heart,
-  ThreeDots,
+  ThreeDots
 } from 'react-bootstrap-icons';
-import { cardData } from '../assets/Database';
 import profile from '../assets/img/crypto.png';
-import image from '../assets/img/tala2.png';
 import Button from '../components/button/Button';
 import Card from '../components/card/Card';
 import Layout from '../components/layout/layout';
-import styles from '../styles/Details.module.css';
-
 // external imports
 import Error from '../components/utils/error';
-import useNftDetails from '../hooks/useNftDetails';
 import ShortenAddress from '../components/utils/shortenAddress';
-import useFetchNFTs from '../hooks/useFetchNFTs';
 import useBuyNft from '../hooks/useBuyNft';
-import { useRouter } from 'next/router';
-import { ethers } from 'ethers';
+import useFetchNFTs from '../hooks/useFetchNFTs';
+import useNftDetails from '../hooks/useNftDetails';
+import styles from '../styles/Details.module.css';
+
+
 
 const Details = () => {
   const [showItem, setShowItem] = useState('history');
@@ -46,7 +46,7 @@ const Details = () => {
           <div className={styles.detailsHeading}>
             <h2>Details</h2>
             <p>
-              <span>Home</span> <ChevronRight /> Product Details
+              <Link href="/"><span style={{cursor: "pointer"}}>Home</span></Link> <ChevronRight /> Product Details
             </p>
           </div>
 
@@ -56,7 +56,7 @@ const Details = () => {
                 <div className={styles.detailsImg}>
                   <img
                     src={nftDetails.image}
-                    style={{ width: '100%', height: '600px' }}
+                    style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                   />
                 </div>
               </div>
@@ -161,7 +161,6 @@ const Details = () => {
                       className={
                         showItem === 'history' ? 'activeitems' : ''
                       }
-                      disabled
                     >
                       History
                     </button>
@@ -170,7 +169,6 @@ const Details = () => {
                       className={
                         showItem === 'info' ? 'activeitems' : ''
                       }
-                      disabled
                     >
                       Stats
                     </button>

@@ -4,12 +4,12 @@ import Script from 'next/script';
 import { useState } from 'react';
 import { ArrowRight } from 'react-bootstrap-icons';
 import Typewriter from 'typewriter-effect';
-import { cardData, topCollections } from '../assets/Database';
+import { topCollections } from '../assets/Database';
 import Card from '../components/card/Card';
 import Card1 from '../components/card1/Card1';
 import Layout from '../components/layout/layout';
-import styles from '../styles/Home.module.css';
 import useFetchNFTs from '../hooks/useFetchNFTs';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const [filtering, setFiltering] = useState('all');
@@ -114,7 +114,7 @@ export default function Home() {
                   }
                 })
                 .map((nft, index) => (
-                  <div key={index} className="col-md-3 col-sm-6">
+                  <div key={index} className="col-md-3 col-sm-6" style={{padding: "17px"}}>
                     <Card data={nft} />
                   </div>
                 ))}

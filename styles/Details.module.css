@@ -157,6 +157,27 @@
   font-size: 12px;
   margin-top: 10px;
 }
+.lists {
+  height: 190px;
+  overflow-y: auto;
+}
+
+.lists::-webkit-scrollbar {
+  width: 10px;
+}
+
+.lists::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.lists::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.lists::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 @media (max-width: 768px) {
   .rightDetails > h4 {
     width: 100%;

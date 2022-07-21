@@ -1,14 +1,16 @@
-import React from 'react';
-import styles from '../../styles/Details.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from 'next/link';
+import React from 'react';
 import { ChevronRight } from 'react-bootstrap-icons';
+import styles from '../../styles/Details.module.css';
+
 const Error = () => {
   return (
     <div className="container">
       <div className={styles.detailsHeading}>
         <h2>Details</h2>
         <p>
-          <span>Home</span> <ChevronRight /> Product Details
+          <Link href="/"><span style={{cursor: "pointer"}}>Home</span></Link> <ChevronRight /> Product Details
         </p>
       </div>
       <div

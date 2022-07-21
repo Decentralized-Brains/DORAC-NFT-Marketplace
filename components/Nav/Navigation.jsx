@@ -12,18 +12,16 @@ import Logo from '../../assets/img/dorac.png';
 import MetamaskConnect from '../button/MetamaskConnect';
 import { NavLink } from '../navlink/NavLink';
 import styles from './Navigation.module.css';
-/*
-    dependencies: react-bootstrap-icons, react-bootsrap
-*/
 
 const Navigation = () => {
-  const [toggleButton, setToggleButton] = useState('');
+  const [toggleButton, setToggleButton] = useState('hideNav');
   const [themeIcon, setThemeIcon] = useState('dark');
 
   const changeTheme = () => {
     document.body.classList.toggle('lightTheme');
     setThemeIcon(themeIcon === 'dark' ? '' : 'dark');
   };
+
 
   return (
     <div className={styles.navWrapper}>
@@ -45,12 +43,7 @@ const Navigation = () => {
                     <h3>DORAC</h3>
                   </div>
                 </Link>
-                {/* <Button text={<List />} onClick={() => showNav()} /> */}
               </div>
-              {/* 
-               <a href="/" className={styles.Logo}>
-                <span>LOGO</span>
-              </a>  */}
             </div>
           </div>
           <div className="col-md-4">
