@@ -10,8 +10,10 @@
   --fontColor2: #bdbdbd;
   --fontDeep: #7e7c7c;
   --border: rgba(255, 255, 255, 0.164);
+  --metaBG: #28242e;
 }
 .lightTheme {
+  --metaBG: #ede0ff;
   --bg: #ececec84;
   --bg2: #dbe5f76b;
   --bg3: #cdcdcd;

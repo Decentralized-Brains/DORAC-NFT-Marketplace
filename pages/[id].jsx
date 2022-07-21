@@ -29,6 +29,7 @@ const Details = () => {
   const { nftDetails } = useNftDetails(router.query.id);
   const { nfts } = useFetchNFTs();
   const [handleBuy, { ownerOf, sold }] = useBuyNft();
+  console.log(nftDetails)
 
   if (nftDetails === undefined) {
     return (
@@ -72,14 +73,14 @@ const Details = () => {
                       <Button text={<ThreeDots />} />
                     </div>
                   </div>
-
-                  <p>
+                  
+                  <p style={{display: "inline-block"}}>
                     <ShortenAddress address={nftDetails.NFTaddress} />
                   </p>
-                  <h4>{nftDetails.date}</h4>
+                  <h4 style={{display: "inline-block", marginLeft: "20px", width: "40px"}}>{new Date(nftDetails.date).toLocaleDateString("en-US")}</h4>
 
                   <div className={styles.dtNames}>
-                    <div className={styles.df}>
+                    <div className={styles.df} style={{alignItems: "center"}}>
                       <div className={styles.imageContainer}>
                         <Image src={profile} alt="" />
                       </div>
@@ -87,19 +88,19 @@ const Details = () => {
                         <p>
                           Category {nftDetails.royalityFee} roylities
                         </p>
-                        <h5>
+                        {/* <h5>
                           {' '}
                           <ShortenAddress
                             address={nftDetails.NFTaddress}
                           />
-                        </h5>
+                        </h5> */}
                       </div>
                     </div>
                     <div className={styles.df}>
                       <div className={styles.imageContainer}>
                         <Image src={profile} alt="" />
                       </div>
-                      <div>
+                      <div style={{display: "flex", alignItems: "baseline", gap: "8px"}}>
                         <p>Owner</p>
                         {ownerOf === undefined ? (
                           <h5>
@@ -120,7 +121,7 @@ const Details = () => {
                       <div className={styles.imageContainer}>
                         <Image src={profile} alt="" />
                       </div>
-                      <div>
+                      <div style={{display: "flex", alignItems: "baseline", gap: "8px"}}>
                         <p>Creator</p>
                         <h5>
                           <ShortenAddress
@@ -136,7 +137,7 @@ const Details = () => {
                   <br />
 
                   <h4 className={styles.priceSection}>
-                    <p>Price : </p>
+                    <p style={{margin: 0}}>Price : </p>
                     <span>{price} ETH</span>
                   </h4>
 
