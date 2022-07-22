@@ -85,8 +85,8 @@ const Details = () => {
                         <Image src={profile} alt="" />
                       </div>
                       <div>
-                        <p>
-                          Category {nftDetails.royalityFee} roylities
+                        <p style={{marginTop: "3px"}}>
+                          Category <br /> 1000000000
                         </p>
                         {/* <h5>
                           {' '}
@@ -97,13 +97,26 @@ const Details = () => {
                       </div>
                     </div>
                     <div className={styles.df}>
-                      <div className={styles.imageContainer}>
+                      <div className={styles.imageContainer1}>
                         <Image src={profile} alt="" />
                       </div>
-                      <div style={{display: "flex", alignItems: "baseline", gap: "8px"}}>
-                        <p>Owner</p>
+                      <div>
+                        <p style={{marginTop: "3px"}}>Creator</p>
+                        <h5 style={{marginTop: "3px"}}>
+                          <ShortenAddress
+                            address={nftDetails.creator}
+                          />
+                        </h5>
+                      </div>
+                    </div>
+                    <div className={styles.df}>
+                      <div className={styles.imageContainer1}>
+                        <Image src={profile} alt="" />
+                      </div>
+                      <div>
+                        <p style={{marginTop: "3px"}}>Owner </p>
                         {ownerOf === undefined ? (
-                          <h5>
+                          <h5 style={{marginTop: "3px"}}>
                             <ShortenAddress
                               address={nftDetails.owner}
                             />
@@ -113,21 +126,6 @@ const Details = () => {
                             <ShortenAddress address={ownerOf} />
                           </h5>
                         )}
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.dtNames}>
-                    <div className={styles.df}>
-                      <div className={styles.imageContainer}>
-                        <Image src={profile} alt="" />
-                      </div>
-                      <div style={{display: "flex", alignItems: "baseline", gap: "8px"}}>
-                        <p>Creator</p>
-                        <h5>
-                          <ShortenAddress
-                            address={nftDetails.creator}
-                          />
-                        </h5>
                       </div>
                     </div>
                   </div>
@@ -227,7 +225,7 @@ const Details = () => {
                               <>
                                 <div className={styles.listLeft}>
                                   <div className={styles.listsItem}>
-                                    <h5 style={{ color: 'white' }}>
+                                    <h5>
                                       <img
                                         src={nftDetails.image}
                                         style={{
@@ -256,7 +254,7 @@ const Details = () => {
                               <>
                                 <div className={styles.listLeft}>
                                   <div className={styles.listsItem}>
-                                    <h5 style={{ color: 'white' }}>
+                                    <h5>
                                       <img
                                         src={nftDetails.image}
                                         style={{
@@ -285,7 +283,7 @@ const Details = () => {
                               <>
                                 <div className={styles.listLeft}>
                                   <div className={styles.listsItem}>
-                                    <h5 style={{ color: 'white' }}>
+                                    <h5>
                                       <img
                                         src={nftDetails.image}
                                         style={{
@@ -314,7 +312,7 @@ const Details = () => {
                               <>
                                 <div className={styles.listLeft}>
                                   <div className={styles.listsItem}>
-                                    <h5 style={{ color: 'white' }}>
+                                    <h5>
                                       <img
                                         src={nftDetails.image}
                                         style={{
@@ -343,7 +341,7 @@ const Details = () => {
                               <>
                                 <div className={styles.listLeft}>
                                   <div className={styles.listsItem}>
-                                    <h5 style={{ color: 'white' }}>
+                                    <h5>
                                       <img
                                         src={nftDetails.image}
                                         style={{
@@ -372,7 +370,7 @@ const Details = () => {
                               <>
                                 <div className={styles.listLeft}>
                                   <div className={styles.listsItem}>
-                                    <h5 style={{ color: 'white' }}>
+                                    <h5>
                                       <img
                                         src={nftDetails.image}
                                         style={{
@@ -401,7 +399,7 @@ const Details = () => {
                               <>
                                 <div className={styles.listLeft}>
                                   <div className={styles.listsItem}>
-                                    <h5 style={{ color: 'white' }}>
+                                    <h5>
                                       <img
                                         src={nftDetails.image}
                                         style={{
@@ -435,7 +433,7 @@ const Details = () => {
                                 <>
                                   <div className={styles.listLeft}>
                                     <div className={styles.listsItem}>
-                                      <h5 style={{ color: 'white' }}>
+                                      <h5>
                                         <img
                                           src={nftDetails.image}
                                           style={{

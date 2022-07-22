@@ -42,6 +42,14 @@
   border-radius: 10px;
   overflow: hidden;
 }
+.imageContainer1 {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+}
 .colorF {
   color: var(--fontColor2);
 }
